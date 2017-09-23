@@ -33,7 +33,7 @@
         android:maxLines="2"
         android:ellipsize="end"
         android:textAppearance="@android:style/TextAppearance.Material.Title"
-        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textColor="@android:color/white"
         android:textAlignment="viewStart"
         android:text="@string/switch_bar_on" />
 
@@ -42,7 +42,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:background="@null"
-        android:theme="@style/ThemeOverlay.SwitchBar" />
+        android:background="@null" />
 
 </LinearLayout>
