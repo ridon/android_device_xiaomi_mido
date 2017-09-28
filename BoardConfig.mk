@@ -190,7 +190,11 @@ TARGET_PER_MGR_ENABLED := true
 TARGET_POWERHAL_VARIANT := qcom
 
 # Properties
+ifneq ($(WITH_ADB),true)
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+else
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.adb.prop
+endif
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true

@@ -38,6 +38,14 @@ audio.offload.multiaac.enable=true
 audio.dolby.ds2.hardbypass=true
 flac.sw.decoder.24bit.support=true
 
+# ADB
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.allow.mock.location=1
+ro.secure=0
+
 # Bluetooth
 bluetooth.hfp.client=1
 qcom.bluetooth.soc=smd
